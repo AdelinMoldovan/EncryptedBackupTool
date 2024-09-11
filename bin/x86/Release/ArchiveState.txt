@@ -1,0 +1,1 @@
+{"TempZipPath":"C:\\Users\\Adelin\\AppData\\Local\\Temp\\72dca954-b530-4d88-83bf-eb1e08f4d4b7.zip","OutputFilePath":"C:\\Users\\Adelin\\Desktop\\folder_recovery\\poze_facultate_2024-09-04_18-24-24.zip.gpg","IsComplete":true}

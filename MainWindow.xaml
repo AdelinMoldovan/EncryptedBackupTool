@@ -1,0 +1,292 @@
+﻿<Window x:Class="RecoveryApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecoveryApplication"
+		xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d" Height="700" Width="1180" WindowStartupLocation="CenterScreen" AllowsTransparency="True"
+		Background="Transparent" WindowStyle="None">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="431*"/>
+            <RowDefinition Height="269*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Width="220" CornerRadius="25 0 0 25">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#FF817971" Offset="0"/>
+                        <GradientStop Color="#FF252B30" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+            </Border>
+
+            <Border CornerRadius="0 25 25 0" Grid.Column="1" IsEnabled="False">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#FF252B30" Offset="0"/>
+                        <GradientStop Color="#FF817971" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+            </Border>
+        </Grid>
+
+        <!--Controls -->
+        <Grid Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Main Menu-->
+            <StackPanel Width="240">
+
+                <!-- <Image Source="logo.png" Stretch="Uniform" Height="142" Margin="19,0,29,0" HorizontalAlignment="Stretch" VerticaqlAlignment="Bottom" RenderTransformOrigin="0.5,0.5" />
+                    -->
+                <StackPanel Orientation="Horizontal" Margin="0,20,20,40" HorizontalAlignment="Center">
+                    <Image Source="logo.png" Stretch="Uniform" Height="140" Margin="20,0,20,50" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Width="204" />
+                    <!-- <fa:ImageAwesome Icon="Archive" Foreground="Black" Width="35"/>
+                    <TextBlock Text="Recovery System" FontSize=" 20" FontWeight="Bold" VerticalAlignment="Center" Foreground="Black" Margin="10 0 0 0"/>
+                    -->
+                </StackPanel>
+                <!-- <Button Style="{StaticResource activeMenuButton}" Width="198" Height="44" Margin="0,370,32,0">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <fa:ImageAwesome Icon="ArrowCircleOutlineRight" Style="{StaticResource buttonIcon}"/>
+                            <TextBlock Text="Sign in" Style="{StaticResource buttonText}"/>
+                        </StackPanel>
+
+                        <fa:ImageAwesome Icon="AngleRight" HorizontalAlignment="Right" Visibility="Visible" Style="{StaticResource ResourceKey=buttonIconExpanded}"/>
+                    </Grid>
+
+                </Button>-->
+
+
+            </StackPanel>
+
+            <!-- Recovery Panel -->
+
+            <Grid Grid.Column="1">
+                <Border Margin="20 120 20 20" Style="{StaticResource border}">
+                    <StackPanel Margin="10 4 10 20">
+                        <TextBlock Text="Archive" Foreground="AliceBlue" TextAlignment="Center" FontSize="28" FontWeight="SemiBold" Height="74"/>
+
+
+                        <!-- <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <Button Content="Start Arhice"/>
+                            <Button Content="Browse Directory" Grid.Column="1"/>
+
+                        </Grid>
+
+
+                        <TextBlock Text="Source Directory" Style="{StaticResource textLabel}"/>
+                        <TextBox Margin="0,10,90,5" TextAlignment="Center" Text="/home/documents/facultate"/>
+                        <TextBlock FontSize ="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="0 0 90 20" Text="Please select the folder to be archived" Height="30"/>
+
+                        <Button Style="{StaticResource button}" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="2">
+                            <fa:ImageAwesome Icon="EllipsisH" Style="{StaticResource whiteIcon}" Width="14" Height="14"/>
+                        </Button>
+                        
+                        <TextBlock Text="GNU Privacy Guard Key" Style="{StaticResource textLabel}"/>
+                        <TextBox Margin="0 10 0 5" TextAlignment="Center" Text="cryptografic_key_for_safety"/>
+                        <TextBlock FontSize ="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="0 0 0 20" Text="Please enter the cryptografic key for security" Height="30"/>
+
+
+                        <TextBlock Text="Destination Directory" Style="{StaticResource textLabel}"/>
+                        <TextBox Margin="0 10 90 5" TextAlignment="Center" Text="/home/destination/nas"/>
+                        <TextBlock FontSize ="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="0 0 90 20" Text="Please select the folder where to save data "/>
+
+                        <Button Style="{StaticResource startButton}">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <fa:ImageAwesome Icon="Play" VerticalAlignment="Center" Style="{StaticResource whiteIcon}" />
+                                <TextBlock Text="Start Archiving" Margin="10 0 0 0" FontWeight="SemiBold"/>
+                            </StackPanel>
+                        </Button>
+                     -->
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Source Directory -->
+                            <TextBlock Text="Source Directory" Style="{StaticResource textLabel}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <TextBox x:Name="SourceDirectoryTextBox" Margin="0,10,0,4.667" TextAlignment="Center" Text="/home/documents" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <Button Click="BrowseSourceFolder_Click" Style="{StaticResource button}" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="1" Margin="0,50,3,0" Height="25" Grid.RowSpan="2" Width="80">
+                                <fa:ImageAwesome Icon="FolderOpen" Style="{StaticResource whiteIcon}" Width="14" Height="35"/>
+                            </Button>
+                            <TextBlock FontSize="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="100,0.333,100,29.667" Text="Please select the folder to be archived" Grid.Row="2" Grid.Column="0"/>
+
+                            <!-- GNU Privacy Guard Key -->
+                            <TextBlock Text="GNU Privacy Guard Key" Style="{StaticResource textLabel}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <TextBox x:Name="GPGKeyPasswordBox" Margin="0,10,0,5" TextAlignment="Center" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <TextBlock FontSize="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="0,0,0,20" Text="Please enter the cryptografic key for encription" Height="30" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                            <!-- Destination Directory -->
+                            <TextBlock Text="Destination Directory" Style="{StaticResource textLabel}" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <TextBox x:Name="DestinationDirectoryTextBox" Margin="0,10,0,5" TextAlignment="Center" Text="/home/destination" Grid.Row="7" Grid.Column="0"/>
+                            <Button Click="BrowseDestinationFolder_Click" Style="{StaticResource button}" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="7" Margin="0,50,3,0" Height="25" Grid.RowSpan="2" Width="80">
+                                <fa:ImageAwesome Icon="FolderOpen" Style="{StaticResource whiteIcon}" Width="14" Height="35"/>
+                            </Button>
+                            <TextBlock FontSize="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="100,0.333,100,29.667" Text="Please select the folder where to save data" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                            <!-- Archiving Frequency -->
+                            <TextBlock Text="Archiving Days Frequency" Style="{StaticResource textLabel}" Grid.Row="9" Grid.Column="0" Margin="0,18,0,0"/>
+                            <ComboBox x:Name="ArchivingFrequencyComboBox" Grid.Row="9" Grid.Column="0" Margin="0,34,303,48">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="14"/>
+                                <ComboBoxItem Content="30"/>
+                            </ComboBox>
+
+                            <!-- Start Archiving Button -->
+                            <Button Click="StartArchiving_Click" Style="{StaticResource startButton}" Grid.Row="10" Grid.Column="0" Margin="170,50,10,10">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <fa:ImageAwesome Icon="Play" VerticalAlignment="Center" Style="{StaticResource whiteIcon}" />
+                                    <TextBlock Text="Start Archiving" Margin="10,0,0,0" FontWeight="SemiBold"/>
+                                </StackPanel>
+                            </Button>
+
+                        </Grid>
+
+                    </StackPanel>
+                </Border>
+
+
+
+            </Grid>
+
+            <Grid Grid.Column="2">
+                <!-- Info Panel-->
+                <Border Margin="20 120 20 20" Style="{StaticResource border}">
+                    <StackPanel Margin="10 4 10 20">
+                        <TextBlock Text="Recovery" Foreground="AliceBlue" TextAlignment="Center" FontSize="28" FontWeight="SemiBold" Height="74"/>
+
+
+                        <!-- <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <Button Content="Start Arhice"/>
+                            <Button Content="Browse Directory" Grid.Column="1"/>
+
+                        </Grid>
+
+
+                        <TextBlock Text="Source Directory" Style="{StaticResource textLabel}"/>
+                        <TextBox Margin="0,10,90,5" TextAlignment="Center" Text="/home/documents/facultate"/>
+                        <TextBlock FontSize ="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="0 0 90 20" Text="Please select the folder to be archived" Height="30"/>
+
+                        <Button Style="{StaticResource button}" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="2">
+                            <fa:ImageAwesome Icon="EllipsisH" Style="{StaticResource whiteIcon}" Width="14" Height="14"/>
+                        </Button>
+                        
+                        <TextBlock Text="GNU Privacy Guard Key" Style="{StaticResource textLabel}"/>
+                        <TextBox Margin="0 10 0 5" TextAlignment="Center" Text="cryptografic_key_for_safety"/>
+                        <TextBlock FontSize ="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="0 0 0 20" Text="Please enter the cryptografic key for security" Height="30"/>
+
+
+                        <TextBlock Text="Destination Directory" Style="{StaticResource textLabel}"/>
+                        <TextBox Margin="0 10 90 5" TextAlignment="Center" Text="/home/destination/nas"/>
+                        <TextBlock FontSize ="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="0 0 90 20" Text="Please select the folder where to save data "/>
+
+                        <Button Style="{StaticResource startButton}">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <fa:ImageAwesome Icon="Play" VerticalAlignment="Center" Style="{StaticResource whiteIcon}" />
+                                <TextBlock Text="Start Archiving" Margin="10 0 0 0" FontWeight="SemiBold"/>
+                            </StackPanel>
+                        </Button>
+                     -->
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Source Archive -->
+                            <TextBlock Text="Source Archive" Style="{StaticResource textLabel}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <TextBox x:Name="SourceArchiveTextBox" Margin="0,10,0,4.667" TextAlignment="Center" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <Button Click="BrowseSourceArchive_Click" Style="{StaticResource button}" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="1" Margin="0,50,3,0" Height="25" Grid.RowSpan="2" Width="80">
+                                <fa:ImageAwesome Icon="FolderOpen" Style="{StaticResource whiteIcon}" Width="14" Height="35"/>
+                            </Button>
+                            <TextBlock FontSize="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="100,0.333,100,29.667" Text="Please select the archive to be recovered" Grid.Row="2" Grid.Column="0"/>
+
+                            <!-- GNU Privacy Guard Key -->
+                            <TextBlock Text="GNU Privacy Guard Key" Style="{StaticResource textLabel}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <TextBox x:Name="GPGKeyPasswordBoxRecovery" Margin="0,10.333,0,5.333" TextAlignment="Center" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" Width="390"/>
+                            <TextBlock FontSize="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="0,0,0,20" Text="Please enter the cryptografic key for decription" Height="30" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                            <!-- Destination Directory -->
+                            <TextBlock Text="Destination Directory" Style="{StaticResource textLabel}" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+                            <TextBox x:Name="DestinationDirectoryTextBoxRecovery" Margin="0,10,0,5" TextAlignment="Center" Grid.Row="7" Grid.Column="0"/>
+                            <Button Click="BrowseDestinationFolderRecovery_Click" Style="{StaticResource button}" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="7" Margin="0,50,3,0" Height="25" Grid.RowSpan="2" Width="80">
+                                <fa:ImageAwesome Icon="FolderOpen" Style="{StaticResource whiteIcon}" Width="14" Height="35"/>
+                            </Button>
+                            <TextBlock FontSize="9" Foreground="White" TextAlignment="Center" Opacity="0.5" Margin="100,0.333,100,29.667" Text="Please select the folder where to recover data" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                            <!-- Start Recovery Button -->
+                            <Button Click="StartRecovery_Click" Style="{StaticResource startRecoverButton}" Grid.Row="9" Grid.Column="0" Margin="170,50,10,10">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <fa:ImageAwesome Icon="Play" VerticalAlignment="Center" Style="{StaticResource whiteIcon}" />
+                                    <TextBlock Text="Start Recovery" Margin="10,0,0,0" FontWeight="SemiBold"/>
+                                </StackPanel>
+                            </Button>
+                        </Grid>
+
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+
+
+        </Grid>
+    </Grid>
+</Window>
