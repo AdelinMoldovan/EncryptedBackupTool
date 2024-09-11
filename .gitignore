@@ -1,0 +1,31 @@
+# Ignore Visual Studio temporary files, build results, and
+# build logs.
+bin/
+obj/
+.vs/
+packages/
+*.pdb
+*.user
+*.suo
+*.pfx
+
+# Ignore any logs
+*.log
+
+# Ignore build output files
+*.exe
+*.dll
+*.config
+*.appx
+
+# Ignore IDE config files
+*.vcxproj.user
+*.csproj.user
+*.dbmdl
+*.opendb
+
+# Ignore other cache or temporary files
+*.cache
+*.rsuser
+*.ide
+*.userosscache
